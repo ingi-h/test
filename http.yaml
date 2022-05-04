@@ -5,8 +5,8 @@
   tasks: 
     - name: httpd installation
       yum: 
-      name: httpd
-      state: present
+        name: httpd
+        state: present
 
     - name: start get_url
       get_url: url=https://www.naver.com dest=/var/www/html
